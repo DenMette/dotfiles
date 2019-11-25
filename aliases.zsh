@@ -3,7 +3,7 @@ alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -ahlF --color --group-directories-first"
-weather() { curl -4 wttr.in/${1:-antwerp} }
+weather() { curl -4 wttr.in/${1:-mechelen} }
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
@@ -27,15 +27,15 @@ alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
 
 # Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
+# alias v="vagrant global-status"
+# alias vup="vagrant up"
+# alias vhalt="vagrant halt"
+# alias vssh="vagrant ssh"
+# alias vreload="vagrant reload"
+# alias vrebuild="vagrant destroy --force && vagrant up"
 
 # Docker
-alias docker-composer="docker-compose"
+# alias docker-composer="docker-compose"
 #alias dstop="docker stop $(docker ps -a -q)"
 #alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
 #alias dpurgeimages="docker rmi $(docker images -q)"
@@ -54,4 +54,4 @@ alias gc="git checkout"
 alias gd="git diff"
 alias resolve="git add . && git commit --no-edit"
 alias gl="git log --oneline --decorate --color"
-alias nuke="git clean -df && git reset --hard"
+alias nah="git clean -df && git reset --hard"
